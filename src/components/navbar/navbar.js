@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Col, Nav, NavItem, NavLink } from 'reactstrap';
+import {NavLink as Link} from 'react-router-dom';
 
 const myStyle = {
     color: '#b3b3b3',
@@ -11,7 +12,7 @@ export const NavBar = () => {
     return  (<div className="navbar-wrap-content">
     <Nav vertical >
       <NavItem>
-        <NavLink style={myStyle} href="#">Link</NavLink>
+        <Link style={myStyle} to="/myday">My Day</Link>
       </NavItem>
       <NavItem>
         <NavLink style={myStyle} href="#">Link</NavLink>

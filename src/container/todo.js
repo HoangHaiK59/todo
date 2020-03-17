@@ -1,5 +1,7 @@
 import React from 'react';
 import { NavBar } from '../components/navbar/navbar';
+import { Switch, Route } from 'react-router-dom';
+import { MyDay } from '../components/day/day';
 
 
 export const TodoContainer = () => {
@@ -8,7 +10,9 @@ export const TodoContainer = () => {
             <NavBar />
         </div>
         <div className="main">
-            main
+           <Switch>
+                <Route path="/myday" component={MyDay}/>
+           </Switch>
         </div>
     </div>
 }
