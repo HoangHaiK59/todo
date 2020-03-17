@@ -5,9 +5,59 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+#root, .root-container {
+  width: 100%;
+  height: 100%;
+}
+
+.root-container {
+  background-color: rgb(19, 16, 16)
+}
+
+body {
+  min-width: 768px;
+  min-height: 600px;
+  overflow: hidden;
+  color: #b3b3b3;
+}
+
+#root {
+  z-index: 0;
+}
+
+.root-container {
+  display: grid;
+  grid-template-areas: "navbar main";
+  grid-template-rows: 1fr;
+  grid-template-columns: 0.5fr 3fr;
+}
+
+.navbar-wrap {
+  grid-area: navbar;
+  margin: 0;
+  color: #b3b3b3;
+}
+
+.main {
+  grid-area: main;
+  background-color: rgb(42, 42, 46);
+  color: #b3b3b3;
+}
+
+.navbar-wrap-content {
+  width: 100%;
+  height: 100%;
 }
