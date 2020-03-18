@@ -16,7 +16,7 @@ export const MyDay = () => {
                 col
                 </Col>
             </Row>
-            <Row>
+            <Row style={{minHeight: '100px'}}>
                 <Col>
                     col
                 </Col>
